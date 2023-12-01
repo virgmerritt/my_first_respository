@@ -1,0 +1,21 @@
+nav{ background-color: grey;}
+.navitem{display: inline-block;
+padding: 10px;
+background-color: blue; }
+
+.LeftContainer{
+    width: 29%;
+    float: left; 
+    background-color: aqua;
+    height: 100px;
+}
+
+.RightContainer{ 
+    width: 70%; 
+    float: left;
+    background-color: green;
+    height: 1000px;
+   
+    
+
+}
