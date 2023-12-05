@@ -1,21 +1,120 @@
-nav{ background-color: grey;}
-.navitem{display: inline-block;
-padding: 10px;
-background-color: blue; }
-
-.LeftContainer{
-    width: 29%;
-    float: left; 
-    background-color: aqua;
-    height: 100px;
+.layout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "header header"
+        "navigation content";
 }
-
-.RightContainer{ 
-    width: 70%; 
-    float: left;
-    background-color: green;
-    height: 1000px;
-   
-    
-
+@media screen and (min-width: 599px)
+body {
+    font-size: 16px;
 }
+user agent stylesheet
+body {
+    display: block;
+    margin: 8px;
+}
+nav {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+}
+user agent stylesheet
+nav {
+    display: block;
+}
+@media screen and (min-width: 599px)
+body {
+    font-size: 16px;
+}
+nav > a:first-of-type {
+    justify-self: flex-start;
+    border-radius: 38.5px;
+}
+.navitem {
+    display: inline-block;
+    /* padding: 10px; */
+    background-color: #C99EED;
+}
+nav > a {
+    padding: 10px 20px;
+    color: white;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.navitem {
+    display: inline-block;
+    /* padding: 10px; */
+    background-color: #C99EED;
+}
+nav > a {
+    padding: 10px 20px;
+    color: white;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+
+    .navitem {
+        display: inline-block;
+        /* padding: 10px; */
+        background-color: #C99EED;
+    }
+    nav > a {
+        padding: 10px 20px;
+        color: white;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    user agent stylesheet
+    a:-webkit-any-link {
+        color: -webkit-link;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    @media screen and (min-width: 599px)
+    body {
+        font-size: 16px;
+    }
+    .LeftContainer {
+        background-color: aqua;
+        /* height: 100px; */
+    }
+    .LeftContainer {
+        grid-area: navigation;
+    }
+    user agent stylesheet
+    div {
+        display: block;
+    }
+    .RightContainer {
+        background-color: green;
+        /* height: 1000px; */
+    }
+    .RightContainer {
+        grid-area: content;
+    }
+ 
